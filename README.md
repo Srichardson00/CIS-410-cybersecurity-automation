@@ -30,7 +30,9 @@ infrastructure as code, and cloud deployment.
 
 I love to go bowling.
 
+
 # My week 2 Infrastructure 
+# Updated
 
 Runner VM: Richardson-Runner
 Runner IP: 192.168.1.124
