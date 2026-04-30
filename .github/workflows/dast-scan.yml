@@ -99,3 +99,5 @@ jobs:
             ${{ secrets.DEV_USER }}@${{ secrets.DEV_HOST }} \
             "sudo rm -rf /tmp/zap-reports" || true
           rm -f /tmp/dast_key
+
+          #Testing pullgi
