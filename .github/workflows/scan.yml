@@ -67,7 +67,7 @@ jobs:
           .venv/bin/pip install -r app/requirements.txt
 
       - name: Snyk dependency scan (SCA)
-        run: ./snyk test --file=app/requirements.txt --severity-threshold=high --package-manager=pip --command=.venv/bin/python3
+        run: ./snyk test --file=app/requirements.txt --severity-threshold=medium --package-manager=pip --command=.venv/bin/python3
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
