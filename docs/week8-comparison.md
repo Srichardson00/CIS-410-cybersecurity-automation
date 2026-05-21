@@ -3,19 +3,12 @@
 | Dimension | On-Premise Docker (Wks 3–5) | Cloud Run (Week 8) |
 | :--- | :--- | :--- |
 | **Infrastructure setup** | 3 VMs created, Docker installed on each | Managed serverless environment, zero server provisioning |
-
 | **Deployment command** | *SSH -> docker build -> docker run* | OIDC auth -> Docker build -> docker push -> gcloud run deploy |
-
 | **TLS / HTTPS** | *Not configured* | Automatically provisioned and managed by Google Cloud |
-
 | **Scaling approach** | *Manual — redeploy or add VMs* | Automatic autoscaling based on needs |
-
 | **Port management** | *Ports 5000/5001/5002 per environment* | Cloud Run handles routing; No port management |
-
 | **Cost when idle** | *VM running 24/7 regardless of traffic* | Scales down to zero when not in use; No activity, no charges |
-
 | **Rollback** | *Re-deploy previous image manually* | Can easily rollback to previous revision with zero downtime | 
-
 | **Secrets management** | *GitHub Secrets -> env vars in workflow* | Integration with Google Secret Manager |
 
 
